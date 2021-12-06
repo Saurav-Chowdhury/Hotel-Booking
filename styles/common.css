@@ -2,3 +2,13 @@
     height: 20px;
     width: 22px;
 }
+html, body{
+    height: 100%;
+}
+.main{
+    min-height: 100vh;
+}
+header img{
+    height: 60px;
+    width: 60px;
+}
