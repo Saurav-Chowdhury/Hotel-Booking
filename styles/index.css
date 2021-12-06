@@ -1,0 +1,9 @@
+.city-images{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;;
+}
+.city-images img{
+    width: 300px;
+    height: 300px;
+}
