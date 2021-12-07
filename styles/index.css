@@ -85,3 +85,15 @@ a{
 input:focus{
      outline: none;
  }
+
+ #view-more button{
+     font-size: 16px;
+     font-family: 'Ubuntu',sans-serif;
+     background-color: rgb(85, 85, 85);
+     border-radius: 5px;
+     padding: 10px;
+ }
+ #view-more a{
+    color: white
+ }
+ 

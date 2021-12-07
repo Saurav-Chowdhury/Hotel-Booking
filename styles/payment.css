@@ -107,3 +107,26 @@ footer{
 strong{
     font-family: cursive;
 }
+
+#contactus button{
+    background-color: rgb(29, 129, 196);
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 2%;
+    width: 160%;
+    height: 110%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
+
+#login{
+    margin-right: 2%;
+}
+#login button{
+    height: 150%;
+    width: 120%;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Ubuntu',sans-serif;
+}

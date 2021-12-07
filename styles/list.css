@@ -74,3 +74,11 @@ a{
     text-decoration: none;
     color: black;
 }
+
+.List-Item{
+    background-color: rgb(196, 193, 193);
+}
+
+.List-Item:hover {
+    background-color: rosybrown;
+}

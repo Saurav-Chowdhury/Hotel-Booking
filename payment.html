@@ -12,7 +12,7 @@
     <div class="main-div">
         <header>
        <a href="index.html"><img src="assests\images\logo.png" class="logo" alt="logo" height="200px" width="150px"></a>
-       <a href="login.html" class="login">Login</a>
+       <span id="login"><button><a href="login.html" class="login">Login</a></button></span>
         </header>
         <div id="content">
             <div class="hotel-address">
@@ -38,10 +38,10 @@
           <a href="#" id="pay">Pay now</a>
            </div>
         </div>
-        </div>
+        </div><br><br><br><br>
          <footer>
             <div id="contactus">
-                <a href="contact.html" target="_blank" id="contact-us">Contact us</a>
+                <button onclick=myFunc()>Contact us</button>
             </div>
             <div id="copyright">
                 &copy; 2020 ROOM SEARCH PVT LTD
@@ -53,5 +53,8 @@
             </div>
         </footer>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="F:\FSD notes\Hotel_Booking_Website_Starter_Code\scripts\payment.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 </html>
