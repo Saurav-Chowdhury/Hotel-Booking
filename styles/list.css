@@ -7,3 +7,39 @@
     width: 40%;
     background-color: rgb(132,136,139);
 }
+
+.map{
+    display: none;
+}
+
+.listview li{
+    display: inline;
+    margin-right: 2%;
+}
+.listview{
+    text-align: center;
+    font-family: 'Ubuntu',sans-serif;
+    
+}
+.listview a{
+    text-decoration: none;
+    color: black;
+}
+.main{
+    margin-top: 6%;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+#list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#list a{
+    margin: 4%;
+    width: 40%;
+    background-color: rgb(132,136,139);
+}

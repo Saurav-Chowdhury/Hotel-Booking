@@ -18,3 +18,12 @@
     margin: 2%;
     padding: 1% 2%;
 }
+
+.content{
+    margin-top: 6%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
