@@ -1,4 +1,20 @@
-#radisson-image img{
+.radisson-image img{
     height: 500px;
     width: 500px;
+}
+.radisson-image{
+    background-color: rgb(132,136,139);
+    width: 50%;
+    height: 20%;
+    margin: 2% auto 2% auto;
+}
+
+.payment-details{
+    margin: 2%;
+}
+.tariff-details{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 2%;
+    padding: 1% 2%;
 }

@@ -4,6 +4,7 @@
 }
 html, body{
     height: 100%;
+    margin: 0px;
 }
 .main{
     min-height: 100vh;
@@ -11,4 +12,10 @@ html, body{
 header img{
     height: 60px;
     width: 60px;
+}
+header,footer{
+    background-color: rosybrown;
+}
+body{
+    background-color: #e0e0e0;
 }
