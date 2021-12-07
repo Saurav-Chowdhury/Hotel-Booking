@@ -14,6 +14,7 @@ html, body{
 header img{
     height: 60px;
     width: 60px;
+    margin-left: 1%;
 }
 header,footer{
     background-color: rosybrown;
