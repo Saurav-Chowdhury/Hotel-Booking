@@ -139,5 +139,9 @@ input::-webkit-input-placeholder {
       padding: 10px;
   }
   
+  #copy{
+      margin-left: 2%;
+      margin-right: 2%;
+  }
 
   

@@ -15,15 +15,25 @@
     display: none;
 }
 
-.listview li{
+.list li{
     display: inline;
     margin-right: 2%;
 }
-.listview{
+.list{
     text-align: center;
     font-family: 'Ubuntu',sans-serif;
     
 }
+
+.list button{
+
+    border: none;
+    background-color: #e0e0e0;
+    font-size: 16px;
+
+}
+
+
 .listview a{
     text-decoration: none;
     color: black;
@@ -81,4 +91,9 @@ a{
 
 .List-Item:hover {
     background-color: rosybrown;
+}
+
+.map img{
+    width: 100%;
+    height: 50em;
 }
