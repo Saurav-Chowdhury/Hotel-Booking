@@ -1,99 +1,71 @@
-#Img-Container{
-    text-align: center;
-    align-items: center;
+/* Added CSS for city image on landing page */
+#index-container {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 4%;
+    flex-direction: column;
 }
-.City-Img img{
+#city-cards {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4% 0%;
+}
+.city-image{
     height: 150px;
     width: 150px;
-    border-radius:25%;
-    box-shadow: 10px 10px 10px gray;
-}
-.City-Img-Container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* position: relative; */
-    /* float: left; */
     border-radius: 25%;
-    margin-top:10px;
+    box-shadow: 10px 10px 10px grey;
 }
-.City-Img-Container .alpha{
- display: none;
- border-radius: 25%;
- margin: auto;
+.city-card-and-name-inner {
+    position: relative;
 }
-.alpha{
-    position:absolute;
-    width: 150px;
-    height: 150px;
-    /* text-align: center; */
-}
-.City-Img-Container:hover .alpha{
-    display: block;
-    line-height: 150px;
-    color: #f1f1f1;
-    float: left;
-    background-color: rgba(0,0,0,0.5);
-    align-content:center;
-    text-align: center;
-}
-.City-Img{
-    display: block;
-}
-header{
-    z-index: 2;
-}
-#search-img{
-    display: flex;
+/* Added CSS for background image */
+#banner{
     background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
+    /* Control the height of the image */
     height: 380px;
+    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
-#search-img input{
-    background-color: #f1f1f1;
-    border-radius: 12px;
-    width: 500px;
-    padding: 10px;
+#search-bar {
+    position: absolute;
+    top: 50%;
+    left: 36%; 
+    right: 36%;
+    bottom: 50%;
+}
+#search-input {
     border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+    width: 100%;
 }
-a{
-    text-decoration: none;
-    color: #000;
+#search-input:focus {
+    outline: none;
 }
-
-#view-more{
+.overlay {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
     text-align: center;
+    border-radius: 25%;
 }
- .content{
-     margin-top: 3%;
- }
-
- #search{
-     z-index: 1;
-
- }
-
-input:focus{
-     outline: none;
- }
-
- #view-more button{
-     font-size: 16px;
-     font-family: 'Ubuntu',sans-serif;
-     background-color: rgb(85, 85, 85);
-     border-radius: 5px;
-     padding: 10px;
- }
- #view-more a{
-    color: white
- }
- 
+.city-card-and-name-inner:hover .overlay {
+    opacity: 1;
+}
+.overlay span {
+    position:relative;
+    top:45%;
+}
+#view-more {
+    margin-bottom:7%;
+    display: flex;
+    justify-content: center;
+}
