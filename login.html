@@ -2,20 +2,19 @@
 <html>
     <head>
         <title>Login</title>
-        <link rel="stylesheet" href="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div class="main">
-            <form action="index.html" method="get">
-            <label for="username">Username:</label>
-            <input type="text" name="username" placeholder="Enter Username" autocomplete="off" required><br>
-            <label for="password">Password:</label>
-            <input type="password" name="password" placeholder="Enter Password" autocomplete="off" required><br>
-            <input type="submit" value="Login">
+        <div>
+            <!-- Added the Login form -->
+            <form action="index.html" autocomplete="off" method="get">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" placeholder="Enter Username" required/>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Enter Password" required/>
+                <br>
+                <input type="submit" value="Login">
             </form>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     </body>
 </html>

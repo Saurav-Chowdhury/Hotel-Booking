@@ -1,99 +1,41 @@
-.newimg{
-    height: 250px;
-    width: 250px;
-}
-.hotel-details{
-    float: left;
-}
-.detail{
-    margin: 4%;
-    width: 40%;
-    background-color: rgb(132,136,139);
-}
-
-.map{
-    display: none;
-}
-
-.list li{
-    display: inline;
-    margin-right: 2%;
-}
-.list{
-    text-align: center;
-    font-family: 'Ubuntu',sans-serif;
-    
-}
-
-.list button{
-
-    border: none;
-    background-color: #e0e0e0;
-    font-size: 16px;
-
-}
-
-
-.listview a{
-    text-decoration: none;
-    color: black;
-}
-.main{
-    margin-top: 6%;
-}
-a{
-    text-decoration: none;
-    color: #000;
-}
-
-#list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-#list a{
-    margin: 4%;
-    width: 40%;
-    background-color: rgb(132,136,139);
-}
-
-#list-view{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding-right: 20px;
-}
-
-.hotel-Img{
+/* Added CSS for hotel image on hotel list page*/
+.hotel-image-small {
     height: 200px;
     width: 250px;
-    float: left;
-    margin-right: 2%;
 }
-.hotel-Details{
-    padding: 2% 2%;
-}
-.List-Item{
+.hotel{
+    margin: 4% 5% 0% 5%; 
     background-color: lightgrey;
-    margin: 2% 5%;
     width: 40%;
     float: left;
-    padding-top: 0;
+    display: flex;
+    justify-content: start;
+    align-content: center;
 }
-.rad-blu-link{
-    text-decoration: none;
-    color: black;
-}
-
-.List-Item{
-    background-color: rgb(196, 193, 193);
-}
-
-.List-Item:hover {
+.hotel:hover {
     background-color: rosybrown;
 }
-
-.map img{
+#list-container {
+    position: relative;
+    height: 100%;
     width: 100%;
-    height: 50em;
+    margin-top: 6%;
 }
+#list-map {
+    position: relative;
+    top: 0%;
+}
+#select-list {
+    position: absolute;
+    left: 42%;
+    font-weight: bold;
+}
+#select-map {
+    position: absolute;
+    left: 50%;
+    font-weight: bold;
+}
+#pills-tab {
+    justify-content: center;
+}
+
