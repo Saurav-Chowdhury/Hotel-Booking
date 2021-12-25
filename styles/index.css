@@ -64,13 +64,13 @@
     position:relative;
     top:45%;
 }
-#view-more {
+#view-more{
     margin-bottom:7%;
     display: flex;
     justify-content: center;
 }
 
-.city-cards2{
+#city-cards2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -107,4 +107,18 @@
 .overlay2 span{
     position: relative;
     top: 45%;
+}
+
+#city-cards-container{
+    display: none;
+}
+
+#view-more2{
+    margin-bottom:7%;
+    display: flex;
+    justify-content: center;
+}
+
+#viewmoreButton2{
+    display: none;
 }

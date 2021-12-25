@@ -18,7 +18,7 @@
             <header class="header-footer">
                 <img src="assests/images/logo.png" class="logo" id="logo-image" alt="logo"/>
                 <button type="button" id="login" class="btn btn-light btn-sm" data-toggle="modal" data-backdrop="false" data-target="#login-modal">LOGIN</button>
-            
+                <button type="button" id="logout" class="btn btn-light btn-sm" onclick="logoutFunc()">LOGOUT</button>
                 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modal-label" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -41,7 +41,7 @@
                                 </form>
                             </div>
                             <div class="modal-footer">
-                                <button id="login-button" type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+                                <button id="login-button" type="button" class="btn btn-primary" data-dismiss="modal" onclick="loginFunc()">Login</button>
                             </div>
                         </div>
                     </div>
@@ -52,8 +52,6 @@
             <div id="index-container">
                 <div id="banner">
                     <div id="search-bar">
-                        <!-- Added form element for search bar to take input-->
-                        <!--Make sure the form has the autocomplete function switched off:-->
                         <form autocomplete="off"> 
                             <input id="search-input" type="text" placeholder="City"/>
                         </form>
@@ -91,31 +89,43 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="city-cards2">
-                    <div class="name-and-image">
-                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg" class ="city-img2" alt="Chennai">
-                        <div class="overlay2"><span>Chennai</span></div>
+                
+                <div id="city-cards-container">
+                    <div id="city-cards2">
+                        <div class="name-and-image">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg" class ="city-img2" alt="Chennai">
+                            <div class="overlay2"><span>Chennai</span></div>
+                        </div>
+                        <div class="name-and-image">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg" class ="city-img2" alt="Agra">
+                            <div class="overlay2"><span>Agra</span></div>
+                        </div>
+                        <div class="name-and-image">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg" class ="city-img2" alt="Jaipur">
+                            <div class="overlay2"><span>Jaipur</span></div>
+                        </div>    
+                        <div class="name-and-image">
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg" class ="city-img2" alt="Bengaluru">
+                            <div class="overlay2"><span>Bengaluru</span></div>
+                        </div>              
                     </div>
-                    <div class="name-and-image">
-                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg" class ="city-img2" alt="Agra">
-                        <div class="overlay2"><span>Agra</span></div>
-                    </div>
-                    <div class="name-and-image">
-                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg" class ="city-img2" alt="Jaipur">
-                        <div class="overlay2"><span>Jaipur</span></div>
-                    </div>    
-                    <div class="name-and-image">
-                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg" class ="city-img2" alt="Bengaluru">
-                        <div class="overlay2"><span>Bengaluru</span></div>
-                    </div>              
                 </div>
                
-                <a href="index.html" id="view-more">
-                    <button type="button" class="btn btn-secondary">View More</button> 
-                </a>      
+                <div id="viewmoreButton">
+                <a href="#" id="view-more">
+                    <button type="button" class="btn btn-secondary" onclick="cityCards2()">View More</button> 
+                </a>
+                </div>      
+
+                <div id="viewmoreButton2">
+                <a href="#" id="view-more2">
+                    <button type="button" class="btn btn-secondary" onclick="cityCards2Collapse()">View Less</button> 
+                </a>
+                </div> 
+
             </div>
 
+            
             <!-- Added the footer elements: Contact Us Button, Social Media Links -->
             <footer class="header-footer">
                 <div id="contact">
@@ -163,5 +173,7 @@
                 </div>
             </footer>
         </div>
+        <script src="scripts/index.js"></script>
+        <script src="scripts/common.js"></script>
     </body>
 </html>

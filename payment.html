@@ -14,12 +14,10 @@
     <body>
         <div class="main-container">
              <!-- Added the header elements: Logo and Login Button -->
-             <header class="header-footer">     
-                <a href="index.html" class="logo">
-                    <img src="assests/images/logo.png" id="logo-image" alt="logo"/>
-                </a>
+             <header class="header-footer">
+                <img src="assests/images/logo.png" class="logo" id="logo-image" alt="logo"/>
                 <button type="button" id="login" class="btn btn-light btn-sm" data-toggle="modal" data-backdrop="false" data-target="#login-modal">LOGIN</button>
-            
+                <button type="button" id="logout" class="btn btn-light btn-sm" onclick="logoutFunc()">LOGOUT</button>
                 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modal-label" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -42,7 +40,7 @@
                                 </form>
                             </div>
                             <div class="modal-footer">
-                                <button id="login-button" type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+                                <button id="login-button" type="button" class="btn btn-primary" data-dismiss="modal" onclick="loginFunc()">Login</button>
                             </div>
                         </div>
                     </div>
@@ -70,7 +68,7 @@
                         <p><strong class="heading">Total Amount:</strong>&nbsp;Rs.10000</p>
                     </div>
                     <a href="#" id="pay-now">
-                        <button type="button" class="btn btn-success" disabled>Pay Now</button>
+                        <button type="button" id="payButton" class="btn btn-success" disabled>Pay Now</button>
                     </a>
                 </div>
             </div>
@@ -121,5 +119,7 @@
                 </div>
             </footer>
         </div>
+        <script src="scripts/common.js"></script>
+        <script src="scripts/payment.js"></script>
     </body>
 </html>
